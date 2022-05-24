@@ -1,12 +1,13 @@
-import { ListProps } from './List'
+import { TableActionPayload } from '@teamsui/schemas'
+
 import {
   AccentScheme,
   ActionHandler,
   ThemeName,
   WithActionHandler,
 } from '../../lib'
-import { TableActionPayload } from '@fluent-blocks/schemas'
 import { View } from '../../views'
+import { ListProps } from './List'
 
 export const List = ({
   themeName,

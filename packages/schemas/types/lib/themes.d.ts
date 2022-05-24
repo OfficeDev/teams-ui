@@ -1,4 +1,4 @@
-import { Palette as NaturalPalette } from '@fluent-blocks/colors'
+import { Palette as NaturalPalette } from '@teamsui/colors'
 
 export interface Palette extends Partial<Omit<NaturalPalette, 'keyColor'>> {
   keyColor: [number, number, number] | string

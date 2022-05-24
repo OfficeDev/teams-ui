@@ -1,13 +1,13 @@
 import { createElement } from 'react'
 
-import { key, Sequence } from '../../lib'
-import { InlineSequenceOrString } from '../../inlines'
+import { HeadingLevel } from '@teamsui/schemas'
 
-import { Block, BlockEntity, BlockSequence } from '../Block/Block'
-import { Paragraph } from '../Paragraph/Paragraph'
-import { Heading } from '../Heading/Heading'
+import { InlineSequenceOrString } from '../../inlines'
+import { Sequence, key } from '../../lib'
 import { BigMessage, BigMessageProps } from '../BigMessage/BigMessage'
-import { HeadingLevel } from '@fluent-blocks/schemas'
+import { Block, BlockEntity, BlockSequence } from '../Block/Block'
+import { Heading } from '../Heading/Heading'
+import { Paragraph } from '../Paragraph/Paragraph'
 
 interface ShallowSectionContentProps {
   title: InlineSequenceOrString

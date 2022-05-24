@@ -1,11 +1,11 @@
 import get from 'lodash/get'
 import { ReactElement } from 'react'
 
-import basicIcons from '@fluent-blocks/basic-icons'
-import { IconProps, IconSize, IconVariant } from '@fluent-blocks/schemas'
 import { makeStyles } from '@fluentui/react-components'
+import basicIcons from '@teamsui/basic-icons'
+import { IconProps, IconSize, IconVariant } from '@teamsui/schemas'
 
-import { useFluentBlocksContext } from '../../lib'
+import { useTeamsUiContext } from '../../lib'
 
 function spriteHref(
   icon: string,
@@ -47,7 +47,7 @@ const useIconStyles = makeStyles({
 export const Icon = (props: IconProps) => {
   const { icon, variant = 'outline', size = 16 } = props
   const iconStyles = useIconStyles()
-  const { iconSpriteUrl } = useFluentBlocksContext()
+  const { iconSpriteUrl } = useTeamsUiContext()
   return (
     <svg className={`${iconStyles.root} fuib-Icon`} data-chromatic="ignore">
       <use href={spriteHref(icon, size, variant, iconSpriteUrl)} />

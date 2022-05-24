@@ -1,7 +1,7 @@
 import noop from 'lodash/noop'
 import { createContext } from 'react'
 
-import { ActionPayload as NaturalActionPayload } from '@fluent-blocks/schemas'
+import { ActionPayload as NaturalActionPayload } from '@teamsui/schemas'
 
 export type ActionPayload = NaturalActionPayload
 

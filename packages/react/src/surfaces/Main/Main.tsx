@@ -1,5 +1,5 @@
-import { MainProps as NaturalMainProps } from '@fluent-blocks/schemas'
 import { mergeClasses as cx, makeStyles } from '@fluentui/react-components'
+import { MainProps as NaturalMainProps } from '@teamsui/schemas'
 
 import { Section, SectionContentProps } from '../../blocks'
 import { rem, useCommonStyles } from '../../lib'

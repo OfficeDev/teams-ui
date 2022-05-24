@@ -1,8 +1,9 @@
-import { ReactElement, cloneElement, ReactSVGElement } from 'react'
-import { makeStyles } from '@fluentui/react-components'
-import { ThemeName, MediaProps } from '@fluent-blocks/schemas'
+import { ReactElement, ReactSVGElement, cloneElement } from 'react'
 
-import { useFluentBlocksContext } from '../../lib'
+import { makeStyles } from '@fluentui/react-components'
+import { MediaProps, ThemeName } from '@teamsui/schemas'
+
+import { useTeamsUiContext } from '../../lib'
 
 type ImageValue = string | Omit<ReactSVGElement, 'ref'>
 
@@ -13,7 +14,7 @@ const useThemedImageStyles = makeStyles({
 })
 
 export function ThemedImage(props: ThemedImageProps) {
-  const { themeName } = useFluentBlocksContext()
+  const { themeName } = useTeamsUiContext()
   const value = props[themeName] as ImageValue
   const themedImageStyles = useThemedImageStyles()
   return typeof value == 'string' ? (

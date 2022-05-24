@@ -23,9 +23,9 @@ export const defaultContext: FluentPatternsBlocksData = {
   iconSpriteUrl: '/sprites/basic-icons.svg',
 }
 
-export const FluentBlocksContext =
+export const TeamsUiContext =
   createContext<FluentPatternsBlocksData>(defaultContext)
 
-export function useFluentBlocksContext() {
-  return useContext(FluentBlocksContext)
+export function useTeamsUiContext() {
+  return useContext(TeamsUiContext)
 }

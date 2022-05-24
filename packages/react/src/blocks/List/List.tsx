@@ -5,12 +5,12 @@ import isFunction from 'lodash/isFunction'
 import isString from 'lodash/isString'
 import { ReactElement, useMemo, useState } from 'react'
 
-import { ListProps as NaturalListProps } from '@fluent-blocks/schemas'
 import { makeStyles } from '@fluentui/react-components'
+import { ListProps as NaturalListProps } from '@teamsui/schemas'
 
 import { getInlineText } from '../../inlines'
 import { Button } from '../../inputs'
-import { useFluentBlocksContext } from '../../lib'
+import { useTeamsUiContext } from '../../lib'
 import {
   CellProps,
   ListColumnProps,
@@ -52,7 +52,7 @@ const Pagination = ({
   pageSize,
   collectionSize,
 }: PaginationProps) => {
-  const { translations } = useFluentBlocksContext()
+  const { translations } = useTeamsUiContext()
   const listStyles = useListStyles()
 
   if (collectionSize <= pageSize) {

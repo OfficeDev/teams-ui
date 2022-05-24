@@ -1,9 +1,10 @@
 import { ReactElement } from 'react'
-import { makeStyles, mergeClasses as cx } from '@fluentui/react-components'
+
+import { mergeClasses as cx, makeStyles } from '@fluentui/react-components'
 import {
-  DescriptionListProps as NaturalDescriptionListProps,
   DescriptionListItemProps,
-} from '@fluent-blocks/schemas'
+  DescriptionListProps as NaturalDescriptionListProps,
+} from '@teamsui/schemas'
 
 import { InlineContent, InlineSequenceOrString } from '../../inlines'
 import { key, sx, useCommonStyles, useTextBlockStyles } from '../../lib'

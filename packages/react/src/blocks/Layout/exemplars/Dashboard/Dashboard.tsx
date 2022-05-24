@@ -1,6 +1,6 @@
 import { ReactElement } from 'react'
 
-import { DashboardProps as NaturalDashboardProps } from '@fluent-blocks/schemas'
+import { DashboardProps as NaturalDashboardProps } from '@teamsui/schemas'
 
 import { LayoutProps } from '../../../../props'
 import { WidgetPropsOrElement } from '../../../Card/exemplars/Widget'

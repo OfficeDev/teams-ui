@@ -12,7 +12,6 @@ import {
   useState,
 } from 'react'
 
-import { TableRowActivateAction } from '@fluent-blocks/schemas'
 import {
   Button as FluentButton,
   mergeClasses as cx,
@@ -24,16 +23,11 @@ import {
   useArrowNavigationGroup,
   useFocusableGroup,
 } from '@fluentui/react-tabster'
+import { TableRowActivateAction } from '@teamsui/schemas'
 
 import { InlineContent } from '../../inlines'
 import { Overflow } from '../../inputs'
-import {
-  key,
-  rem,
-  sx,
-  useCommonStyles,
-  useFluentBlocksContext,
-} from '../../lib'
+import { key, rem, sx, useCommonStyles, useTeamsUiContext } from '../../lib'
 import { ListColumnProps, MenuItemSequence, TableProps } from '../../props'
 import { ShortInputs } from '../ShortInputs/ShortInputs'
 import { getBreakpoints } from './tableBreakpoints'
@@ -150,7 +144,7 @@ export const Table = (props: TableProps) => {
     ? props.contextualSelectionProps
     : null
 
-  const { translations, onAction: contextOnAction } = useFluentBlocksContext()
+  const { translations, onAction: contextOnAction } = useTeamsUiContext()
 
   const contextualVariant = props.contextualVariant || 'block'
   const tableId = key(props)

@@ -1,22 +1,22 @@
-<img alt="Fluent Blocks logo" src="https://cdn.jsdelivr.net/gh/OfficeDev/fluent-blocks@next/packages/react/.storybook/public/brandImage.svg" width="320" />
+# Teams UI Components
 
-Fluent Blocks makes it easy to use [Fluent][figma-fluent] & [UI Kit][figma-uikit] designs in app development.
+Teams UI Components makes it easy to use [Fluent][figma-fluent] & [UI Kit][figma-uikit] designs in app development.
 
 This repository provides a set of packages developers can use to build fully interactive & accessible experiences that match Fluent & UI Kit designs. Each package provides a comprehensive overview of what it does and how to get started in its readme.
 
+## ⚠️ The name of this project may change
+
+This project’s name may change. Please watch for a deprecation notice from NPM or news in the readme’s of this repository.
+
 ## Packages
 
-- [**Fluent Blocks: React**](packages/react#readme) ([Storybook ↗][storybook])
+- [**Teams UI Components: React**](packages/react#readme) ([Storybook ↗][storybook])
 - [Schemas](packages/schemas#readme)
-
-## ⚠️ In active development
-
-This project’s API is subject to unannounced breaking changes and is not yet on any release cycle. Currently only the React implementation is in development.
 
 ## Contributing
 
 If you’d like to contribute to this project, please see [the Contributing file](CONTRIBUTING.md).
 
-[storybook]: https://aka.ms/fluent-blocks-storybook
+[storybook]: https://aka.ms/teams-ui-storybook
 [figma-fluent]: https://www.figma.com/community/file/836828295772957889/Microsoft-Fluent-Web
 [figma-uikit]: https://www.figma.com/community/file/916836509871353159/Microsoft-Teams-UI-Kit

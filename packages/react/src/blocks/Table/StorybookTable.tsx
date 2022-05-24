@@ -1,4 +1,4 @@
-import { TableActionPayload } from '@fluent-blocks/schemas'
+import { TableActionPayload } from '@teamsui/schemas'
 
 import { AccentScheme, ThemeName } from '../../lib'
 import { ActionHandler, WithActionHandler } from '../../props'

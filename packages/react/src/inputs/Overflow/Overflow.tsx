@@ -1,6 +1,5 @@
 import noop from 'lodash/noop'
 
-import { OverflowProps as NaturalOverflowProps } from '@fluent-blocks/schemas'
 import {
   Menu,
   MenuButton,
@@ -11,9 +10,10 @@ import {
   Tooltip,
   makeStyles,
 } from '@fluentui/react-components'
+import { OverflowProps as NaturalOverflowProps } from '@teamsui/schemas'
 
 import { Icon } from '../../inlines'
-import { Sequence, sx, useFluentBlocksContext } from '../../lib'
+import { Sequence, sx, useTeamsUiContext } from '../../lib'
 import {
   ActionHandler,
   MenuAction,
@@ -90,7 +90,7 @@ export const Overflow = ({
   triggerIcon = 'more_horizontal',
   triggerLabel,
 }: OverflowProps) => {
-  const { translations, onAction } = useFluentBlocksContext()
+  const { translations, onAction } = useTeamsUiContext()
   const overflowStyles = useOverflowStyles()
   const label = triggerLabel || translations.more
   return overflow.length ? (

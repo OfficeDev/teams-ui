@@ -1,6 +1,7 @@
 import { ReactElement } from 'react'
+
 import { mergeClasses as cx } from '@fluentui/react-components'
-import { CodeProps as NaturalCodeProps } from '@fluent-blocks/schemas'
+import { CodeProps as NaturalCodeProps } from '@teamsui/schemas'
 
 import { useCommonStyles, useTextBlockStyles, useTextStyles } from '../../lib'
 

@@ -4,12 +4,12 @@ import { FluentProvider } from '@fluentui/react-components'
 
 import { getTheme } from '../theme'
 import {
-  FluentBlocksContext,
   FluentPatternsBlocksData,
+  TeamsUiContext,
   defaultContext,
-} from './FluentBlocksContext'
+} from './TeamsUiContext'
 
-export const FluentBlocksProvider = ({
+export const TeamsUiProvider = ({
   children,
   ...props
 }: PropsWithChildren<Partial<Omit<FluentPatternsBlocksData, 'theme'>>>) => {
@@ -27,9 +27,9 @@ export const FluentBlocksProvider = ({
         dir: context.translations.dir,
       }}
     >
-      <FluentBlocksContext.Provider value={context}>
+      <TeamsUiContext.Provider value={context}>
         {children}
-      </FluentBlocksContext.Provider>
+      </TeamsUiContext.Provider>
     </FluentProvider>
   )
 }

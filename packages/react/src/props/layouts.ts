@@ -1,4 +1,4 @@
-import { LayoutProps as NaturalLayoutProps } from '@fluent-blocks/schemas'
+import { LayoutProps as NaturalLayoutProps } from '@teamsui/schemas'
 
 import { LayoutItemPropsOrElement } from '../blocks/Layout/LayoutItem'
 

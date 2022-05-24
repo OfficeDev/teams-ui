@@ -1,7 +1,7 @@
 {
-  "name": "@fluent-blocks/basic-icons",
-  "version": "9.1.2",
-  "repository": "git@github.com:OfficeDev/fluent-blocks.git",
+  "name": "@teamsui/basic-icons",
+  "version": "9.2.0-rc.0",
+  "repository": "git@github.com:OfficeDev/teams-ui.git",
   "authors": [
     "Will Shown <willshown@microsoft.com>"
   ],

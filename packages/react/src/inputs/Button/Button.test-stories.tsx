@@ -1,6 +1,7 @@
 import { Parameters } from '@storybook/addons'
-import { Button, ButtonProps, ButtonActionPayload } from './Button'
-import { ActionHandler, FluentBlocksProvider } from '../../lib'
+
+import { ActionHandler, TeamsUiProvider } from '../../lib'
+import { Button, ButtonActionPayload, ButtonProps } from './Button'
 
 export default {
   title: 'Tests/Button',
@@ -13,9 +14,9 @@ type ButtonTestArgs = {
 }
 
 const ButtonTemplate = ({ button, onAction }: ButtonTestArgs) => (
-  <FluentBlocksProvider onAction={onAction}>
+  <TeamsUiProvider onAction={onAction}>
     <Button {...button} />
-  </FluentBlocksProvider>
+  </TeamsUiProvider>
 )
 
 export const ButtonClickTest: typeof ButtonTemplate & {

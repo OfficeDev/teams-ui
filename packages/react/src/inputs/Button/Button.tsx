@@ -1,18 +1,18 @@
 import { ReactElement, useCallback } from 'react'
 
 import {
-  ButtonActionPayload as NaturalButtonActionPayload,
-  ButtonProps as NaturalButtonProps,
-} from '@fluent-blocks/schemas'
-import {
   Button as FluentButton,
   Tooltip,
   mergeClasses as cx,
   makeStyles,
 } from '@fluentui/react-components'
+import {
+  ButtonActionPayload as NaturalButtonActionPayload,
+  ButtonProps as NaturalButtonProps,
+} from '@teamsui/schemas'
 
 import { Icon } from '../../inlines'
-import { rem, sx, useFluentBlocksContext } from '../../lib'
+import { rem, sx, useTeamsUiContext } from '../../lib'
 import { ShortInputContextualProps, WithActionHandler } from '../../props'
 
 export type ButtonActionPayload = NaturalButtonActionPayload
@@ -61,7 +61,7 @@ export const Button = ({
   payload,
   contextualVariant = 'block-inputs',
 }: ButtonProps) => {
-  const { onAction: contextOnAction } = useFluentBlocksContext()
+  const { onAction: contextOnAction } = useTeamsUiContext()
 
   const onButtonActivate = useCallback(() => {
     const actionPayload = {

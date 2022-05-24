@@ -1,4 +1,4 @@
-import { AccentScheme, FluentBlocksProvider, ThemeName } from '../../lib'
+import { AccentScheme, TeamsUiProvider, ThemeName } from '../../lib'
 import { Main } from '../../surfaces'
 import { DescriptionListProps } from './DescriptionList'
 
@@ -12,7 +12,7 @@ export const DescriptionList = ({
   accentScheme: AccentScheme
   iconSpriteUrl: string
 }) => (
-  <FluentBlocksProvider {...{ themeName, accentScheme, iconSpriteUrl }}>
+  <TeamsUiProvider {...{ themeName, accentScheme, iconSpriteUrl }}>
     <Main
       blocks={[
         {
@@ -29,5 +29,5 @@ export const DescriptionList = ({
       ]}
       title={[{ text: ' ' }]}
     />
-  </FluentBlocksProvider>
+  </TeamsUiProvider>
 )

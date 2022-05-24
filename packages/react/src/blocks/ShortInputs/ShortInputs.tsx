@@ -1,7 +1,7 @@
 import { ReactElement } from 'react'
 
-import { ShortInputsProps as NaturalShortInputsProps } from '@fluent-blocks/schemas'
 import { mergeClasses as cx, makeStyles } from '@fluentui/react-components'
+import { ShortInputsProps as NaturalShortInputsProps } from '@teamsui/schemas'
 
 import {
   ButtonPropsOrElement,

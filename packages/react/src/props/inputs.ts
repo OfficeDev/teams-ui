@@ -4,7 +4,7 @@ import {
   InputInitialValueProps as NaturalInputWithInitialStringValue,
   LabeledValueProps as NaturalLabeledValueProps,
   TextInputProps as NaturalTextInputProps,
-} from '@fluent-blocks/schemas'
+} from '@teamsui/schemas'
 
 import { InlineSequenceOrString } from '../inlines'
 

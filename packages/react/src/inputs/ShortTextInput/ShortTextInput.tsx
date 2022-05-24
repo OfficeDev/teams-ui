@@ -1,13 +1,13 @@
 import get from 'lodash/get'
 import { ReactElement, useEffect, useRef, useState } from 'react'
 
-import {
-  ShortTextInputProps as NaturalShortTextInputProps,
-  SingleValueInputActionPayload,
-} from '@fluent-blocks/schemas'
 import { mergeClasses as cx, makeStyles } from '@fluentui/react-components'
 // todo: fix this import when it stabilizes
 import { Input, Label } from '@fluentui/react-components/unstable'
+import {
+  ShortTextInputProps as NaturalShortTextInputProps,
+  SingleValueInputActionPayload,
+} from '@teamsui/schemas'
 
 import { Inline, InlineContent } from '../../inlines'
 import {
@@ -15,7 +15,7 @@ import {
   sx,
   useCommonStyles,
   useDebounce,
-  useFluentBlocksContext,
+  useTeamsUiContext,
 } from '../../lib'
 import {
   ShortInputContextualProps,
@@ -65,7 +65,7 @@ export const ShortTextInput = ({
   const [value, setValue] = useState(initialValue || '')
   const debouncedValue = useDebounce(value, 400)
   const didMount = useRef(false)
-  const { onAction: contextOnAction } = useFluentBlocksContext()
+  const { onAction: contextOnAction } = useTeamsUiContext()
 
   useEffect(() => {
     if (didMount.current) {

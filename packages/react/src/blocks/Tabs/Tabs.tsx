@@ -1,13 +1,13 @@
 import uniqueId from 'lodash/uniqueId'
 import { ReactElement, useState } from 'react'
 
-import {
-  TabsItemProps as NaturalTabsItemProps,
-  TabsProps as NaturalTabsProps,
-} from '@fluent-blocks/schemas'
 import { mergeClasses as cx, makeStyles } from '@fluentui/react-components'
 // todo: fix this import when it stabilizes
 import { Tab, TabList } from '@fluentui/react-components/unstable'
+import {
+  TabsItemProps as NaturalTabsItemProps,
+  TabsProps as NaturalTabsProps,
+} from '@teamsui/schemas'
 
 import { ButtonProps } from '../../inputs'
 import {

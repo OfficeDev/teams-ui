@@ -1,13 +1,13 @@
 import { ReactElement } from 'react'
-import { IllustrationProps as NaturalIllustrationProps } from '@fluent-blocks/schemas'
 
-import dfault from './variants/Default'
-import error from './variants/Error'
-import empty from './variants/Empty'
-import hello from './variants/Hello'
-import thanks from './variants/Thanks'
+import { IllustrationProps as NaturalIllustrationProps } from '@teamsui/schemas'
 
 import { ThemedImage } from '../ThemedImage/ThemedImage'
+import dfault from './variants/Default'
+import empty from './variants/Empty'
+import error from './variants/Error'
+import hello from './variants/Hello'
+import thanks from './variants/Thanks'
 
 export type IllustrationProps = NaturalIllustrationProps
 

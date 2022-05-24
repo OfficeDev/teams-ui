@@ -1,0 +1,11 @@
+{
+  "mode": "pre",
+  "tag": "rc",
+  "initialVersions": {
+    "@teamsui/colors": "9.1.0",
+    "@teamsui/basic-icons": "9.1.2",
+    "@teamsui/react": "9.1.3",
+    "@teamsui/schemas": "9.1.0"
+  },
+  "changesets": []
+}

@@ -1,11 +1,12 @@
 import uniqueId from 'lodash/uniqueId'
 import { ReactElement } from 'react'
-import { makeStyles, mergeClasses as cx } from '@fluentui/react-components'
-import { FigureProps as NaturalFigureProps } from '@fluent-blocks/schemas'
 
-import { InlineSequenceOrString, InlineContent } from '../../inlines'
-import { MediaEntity, Media } from '../../media'
+import { mergeClasses as cx, makeStyles } from '@fluentui/react-components'
+import { FigureProps as NaturalFigureProps } from '@teamsui/schemas'
+
+import { InlineContent, InlineSequenceOrString } from '../../inlines'
 import { useCommonStyles } from '../../lib'
+import { Media, MediaEntity } from '../../media'
 
 export interface FigureProps
   extends Omit<NaturalFigureProps, 'media' | 'caption'> {

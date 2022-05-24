@@ -1,6 +1,6 @@
 import range from 'lodash/range'
 
-import { AccentScheme, FluentBlocksProvider, ThemeName } from '../../lib'
+import { AccentScheme, TeamsUiProvider, ThemeName } from '../../lib'
 import { CardProps } from '../../props/card-properties'
 import { Main } from '../../surfaces'
 
@@ -14,9 +14,9 @@ export const BlockCard = ({
   accentScheme: AccentScheme
   iconSpriteUrl: string
 }) => (
-  <FluentBlocksProvider {...{ themeName, accentScheme, iconSpriteUrl }}>
+  <TeamsUiProvider {...{ themeName, accentScheme, iconSpriteUrl }}>
     <Main blocks={[props]} title={[{ text: ' ' }]} />
-  </FluentBlocksProvider>
+  </TeamsUiProvider>
 )
 
 export const LayoutCard = ({
@@ -29,7 +29,7 @@ export const LayoutCard = ({
   accentScheme: AccentScheme
   iconSpriteUrl: string
 }) => (
-  <FluentBlocksProvider {...{ themeName, accentScheme, iconSpriteUrl }}>
+  <TeamsUiProvider {...{ themeName, accentScheme, iconSpriteUrl }}>
     <Main
       blocks={[
         {
@@ -41,5 +41,5 @@ export const LayoutCard = ({
       ]}
       title={[{ text: ' ' }]}
     />
-  </FluentBlocksProvider>
+  </TeamsUiProvider>
 )

@@ -1,6 +1,6 @@
-import { ChartProps } from './Chart'
-import { AccentScheme, FluentBlocksProvider, ThemeName } from '../../lib'
+import { AccentScheme, TeamsUiProvider, ThemeName } from '../../lib'
 import { Main } from '../../surfaces'
+import { ChartProps } from './Chart'
 
 export const Chart = ({
   themeName,
@@ -12,7 +12,7 @@ export const Chart = ({
   accentScheme: AccentScheme
   iconSpriteUrl: string
 }) => (
-  <FluentBlocksProvider {...{ themeName, accentScheme, iconSpriteUrl }}>
+  <TeamsUiProvider {...{ themeName, accentScheme, iconSpriteUrl }}>
     <Main blocks={[{ media: props, variant: 'textWidth' }]} title={[' ']} />
-  </FluentBlocksProvider>
+  </TeamsUiProvider>
 )

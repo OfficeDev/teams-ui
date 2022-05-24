@@ -1,22 +1,22 @@
 import { ReactElement } from 'react'
-import { makeStyles, mergeClasses as cx } from '@fluentui/react-components'
-import { BigMessageProps as NaturalBigMessageProps } from '@fluent-blocks/schemas'
 
-import {
-  renderIfEscape,
-  rem,
-  sx,
-  EscapeElement,
-  isEscapeElement,
-} from '../../lib'
-import { MediaEntity } from '../../media'
+import { mergeClasses as cx, makeStyles } from '@fluentui/react-components'
+import { BigMessageProps as NaturalBigMessageProps } from '@teamsui/schemas'
+
 import { InlineSequenceOrString } from '../../inlines'
 import { ButtonProps } from '../../inputs'
-
+import {
+  EscapeElement,
+  isEscapeElement,
+  rem,
+  renderIfEscape,
+  sx,
+} from '../../lib'
+import { MediaEntity } from '../../media'
 import { Figure } from '../Figure/Figure'
 import { Heading } from '../Heading/Heading'
 import { Paragraph } from '../Paragraph/Paragraph'
-import { ShortInputs, ShortInputSequence } from '../ShortInputs/ShortInputs'
+import { ShortInputSequence, ShortInputs } from '../ShortInputs/ShortInputs'
 
 type BigMessageActionProps = Omit<ButtonProps, 'variant' | 'type'>
 

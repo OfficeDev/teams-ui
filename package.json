@@ -1,6 +1,6 @@
 {
-  "name": "@fluent-blocks/monorepo",
-  "repository": "git@github.com:OfficeDev/fluent-blocks.git",
+  "name": "@teamsui/monorepo",
+  "repository": "git@github.com:OfficeDev/teams-ui.git",
   "authors": [
     "Will Shown <willshown@microsoft.com>",
     "Zhenya Savchenko <zhenyasa@microsoft.com>"
@@ -18,7 +18,7 @@
   },
   "engines": {
     "node": ">=12.0.0 <17.0.0",
-    "pnpm": "^6"
+    "pnpm": "^7"
   },
   "devDependencies": {
     "@changesets/changelog-github": "latest",

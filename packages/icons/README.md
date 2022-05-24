@@ -1,10 +1,10 @@
-# Basic icons for Fluent Blocks
+# Basic icons for Teams UI Components
 
-This package manages the “basic icons” to include with Fluent Blocks. These are the icons that other packages in this project will be able to use without relying on a proxy.
+This package manages the “basic icons” to include with Teams UI Components. These are the icons that other packages in this project will be able to use without relying on a proxy.
 
 The sprite should be served as a regular asset file (versioned if necessary) to take best advantage of the UAs’ cache.
 
-Fluent Blocks can still fall back to remote one-off sprites if the developer asks for an icon that isn't included in `basic-icons.json`.
+Teams UI Components can still fall back to remote one-off sprites if the developer asks for an icon that isn't included in `basic-icons.json`.
 
 ## Configuring
 

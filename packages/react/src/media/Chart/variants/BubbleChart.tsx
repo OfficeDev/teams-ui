@@ -1,7 +1,7 @@
 import { Chart } from 'chart.js'
 import { memo, useContext, useEffect, useRef } from 'react'
 
-import { FluentBlocksContext, useTranslations } from '../../../lib'
+import { TeamsUiContext, useTranslations } from '../../../lib'
 import { Legend } from '../Legend'
 import {
   buildPattern,
@@ -33,7 +33,7 @@ export const BubbleChart = memo(
     const canvasRef = useRef<HTMLCanvasElement | null>(null)
     const chartRef = useRef<Chart | undefined>()
     const chartId = useChartId()
-    const { themeName, theme } = useContext(FluentBlocksContext)
+    const { themeName, theme } = useContext(TeamsUiContext)
 
     const chartDataPointColors = useChartColors({ theme, themeName })
     const translate = useTranslations()

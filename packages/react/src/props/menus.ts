@@ -1,7 +1,4 @@
-import {
-  MenuDivider,
-  MenuAction as NaturalMenuAction,
-} from '@fluent-blocks/schemas'
+import { MenuDivider, MenuAction as NaturalMenuAction } from '@teamsui/schemas'
 
 import { ButtonProps } from '../inputs'
 

@@ -1,7 +1,7 @@
 import { ReactElement } from 'react'
 
-import { ParagraphProps as NaturalParagraphProps } from '@fluent-blocks/schemas'
 import { mergeClasses as cx } from '@fluentui/react-components'
+import { ParagraphProps as NaturalParagraphProps } from '@teamsui/schemas'
 
 import { InlineContent, InlineSequenceOrString } from '../../inlines'
 import { useCommonStyles, useTextBlockStyles } from '../../lib'

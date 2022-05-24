@@ -1,9 +1,9 @@
 {
   "$schema": "https://unpkg.com/@changesets/config@1.7.0/schema.json",
-  "changelog": ["@changesets/changelog-github", { "repo": "OfficeDev/fluent-blocks" }],
+  "changelog": ["@changesets/changelog-github", { "repo": "OfficeDev/teams-ui" }],
   "commit": false,
   "fixed": [],
-  "linked": [["@fluent-blocks/schemas", "@fluent-blocks/react"]],
+  "linked": [["@teamsui/schemas", "@teamsui/react"]],
   "access": "public",
   "baseBranch": "latest",
   "updateInternalDependencies": "patch",

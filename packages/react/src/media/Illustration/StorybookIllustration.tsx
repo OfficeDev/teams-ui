@@ -1,6 +1,6 @@
-import { IllustrationProps } from './Illustration'
-import { AccentScheme, FluentBlocksProvider, ThemeName } from '../../lib'
+import { AccentScheme, TeamsUiProvider, ThemeName } from '../../lib'
 import { Main } from '../../surfaces'
+import { IllustrationProps } from './Illustration'
 
 export const Illustration = ({
   themeName,
@@ -12,10 +12,10 @@ export const Illustration = ({
   accentScheme: AccentScheme
   iconSpriteUrl: string
 }) => (
-  <FluentBlocksProvider {...{ themeName, accentScheme, iconSpriteUrl }}>
+  <TeamsUiProvider {...{ themeName, accentScheme, iconSpriteUrl }}>
     <Main
       blocks={[{ media: props, variant: 'narrow' }]}
       title={[{ text: ' ' }]}
     />
-  </FluentBlocksProvider>
+  </TeamsUiProvider>
 )

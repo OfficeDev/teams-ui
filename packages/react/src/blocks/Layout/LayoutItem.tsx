@@ -1,9 +1,10 @@
-import { cloneElement, ReactElement } from 'react'
-import { makeStyles, mergeClasses as cx } from '@fluentui/react-components'
+import { ReactElement, cloneElement } from 'react'
+
+import { mergeClasses as cx, makeStyles } from '@fluentui/react-components'
 import {
   LayoutVariant,
   LayoutItemProps as NaturalLayoutItemProps,
-} from '@fluent-blocks/schemas'
+} from '@teamsui/schemas'
 
 import {
   EscapeElement,
@@ -12,7 +13,6 @@ import {
   renderIfEscape,
   sx,
 } from '../../lib'
-
 import { CardPropsOrElement, renderIfCard } from '../Card/Card'
 
 export type LayoutItemEntity = CardPropsOrElement | EscapeElement

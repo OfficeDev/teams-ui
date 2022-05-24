@@ -1,13 +1,14 @@
 import set from 'lodash/set'
-import { ToolbarProps } from './Toolbar'
+
 import {
   AccentScheme,
   ActionHandler,
-  FluentBlocksProvider,
   MenuAction,
+  TeamsUiProvider,
   ThemeName,
 } from '../../lib'
 import { Main } from '../../surfaces'
+import { ToolbarProps } from './Toolbar'
 
 export const Toolbar = ({
   themeName,
@@ -24,12 +25,10 @@ export const Toolbar = ({
   buttonSize: 'small' | 'medium' | 'large'
   iconSpriteUrl: string
 }) => (
-  <FluentBlocksProvider
-    {...{ themeName, accentScheme, onAction, iconSpriteUrl }}
-  >
+  <TeamsUiProvider {...{ themeName, accentScheme, onAction, iconSpriteUrl }}>
     <Main
       title={[{ text: ' ' }]}
       blocks={[{ ...set(props, 'toolbar.buttonSize', buttonSize) }]}
     />
-  </FluentBlocksProvider>
+  </TeamsUiProvider>
 )

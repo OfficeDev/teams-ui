@@ -1,7 +1,7 @@
 import { ReactElement, createElement } from 'react'
 
-import { HeadingProps as NaturalHeadingProps } from '@fluent-blocks/schemas'
 import { mergeClasses as cx } from '@fluentui/react-components'
+import { HeadingProps as NaturalHeadingProps } from '@teamsui/schemas'
 
 import { InlineContent } from '../../inlines'
 import { useCommonStyles, useTextBlockStyles } from '../../lib'

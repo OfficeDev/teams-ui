@@ -13,7 +13,7 @@ import {
   renderIfEscape,
   sx,
   useCommonStyles,
-  useFluentBlocksContext,
+  useTeamsUiContext,
 } from '../../lib'
 import { CardContentItemEntity, CardProps } from '../../props'
 import { renderIfDescriptionList } from '../DescriptionList/DescriptionList'
@@ -74,7 +74,7 @@ const useCardStyles = makeStyles({
 export const Card = ({ card, contextualVariant = 'block' }: CardProps) => {
   const commonStyles = useCommonStyles()
   const cardStyles = useCardStyles()
-  const { themeName } = useFluentBlocksContext()
+  const { themeName } = useTeamsUiContext()
   const id = key(card)
   return (
     <FluentCard

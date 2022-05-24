@@ -1,6 +1,5 @@
 import { ReactElement } from 'react'
 
-import { RadioGroupProps as NaturalRadioGroupProps } from '@fluent-blocks/schemas'
 import {
   RadioGroup as FluentRadioGroup,
   Radio,
@@ -9,6 +8,7 @@ import {
 } from '@fluentui/react-components'
 // todo: fix this import when it stabilizes
 import { Label } from '@fluentui/react-components/unstable'
+import { RadioGroupProps as NaturalRadioGroupProps } from '@teamsui/schemas'
 
 import { InlineContent } from '../../inlines'
 import { makeLabelId, useCommonStyles } from '../../lib'

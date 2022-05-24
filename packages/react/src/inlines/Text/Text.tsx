@@ -1,5 +1,6 @@
 import { ReactElement } from 'react'
-import { TextProps } from '@fluent-blocks/schemas'
+
+import { TextProps } from '@teamsui/schemas'
 
 import { useTextStyles } from '../../lib'
 

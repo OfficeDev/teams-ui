@@ -1,8 +1,8 @@
 import {
   BubbleChartDatum as NaturalBubbleChartDatum,
-  ChartDataset as NaturalChartDataset,
   ChartData as NaturalChartData,
-} from '@fluent-blocks/schemas'
+  ChartDataset as NaturalChartDataset,
+} from '@teamsui/schemas'
 
 export type BubbleChartDatum = NaturalBubbleChartDatum
 

@@ -9,11 +9,11 @@ import {
   useState,
 } from 'react'
 
+import { mergeClasses as cx, makeStyles } from '@fluentui/react-components'
 import {
   ToolbarProps as NaturalToolbarProps,
   SingleValueInputActionPayload,
-} from '@fluent-blocks/schemas'
-import { mergeClasses as cx, makeStyles } from '@fluentui/react-components'
+} from '@teamsui/schemas'
 
 import {
   Button,
@@ -21,12 +21,7 @@ import {
   Overflow,
   ShortTextInput,
 } from '../../inputs'
-import {
-  Sequence,
-  rem,
-  useCommonStyles,
-  useFluentBlocksContext,
-} from '../../lib'
+import { Sequence, rem, useCommonStyles, useTeamsUiContext } from '../../lib'
 import {
   MenuItemEntity,
   MenuItemSequence,
@@ -119,7 +114,7 @@ export const Toolbar = ({
 }: ToolbarProps) => {
   const commonStyles = useCommonStyles()
   const toolbarStyles = useToolbarStyles()
-  const { translations } = useFluentBlocksContext()
+  const { translations } = useTeamsUiContext()
   const $toolbar = useRef<HTMLDivElement | null>(null)
   const [layoutNeedsUpdate, setLayoutNeedsUpdate] = useState(true)
   const [actionsInFlow, setActionsInFlow] = useState<Set<string>>(new Set())

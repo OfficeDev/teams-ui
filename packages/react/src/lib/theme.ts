@@ -2,16 +2,6 @@ import isObject from 'lodash/isObject'
 import isString from 'lodash/isString'
 
 import {
-  PaletteConfig,
-  hexColorsFromPalette,
-  hex_to_LCH,
-} from '@fluent-blocks/colors'
-import {
-  AccentScheme as NaturalAccentScheme,
-  ThemeName as NaturalThemeName,
-  Palette,
-} from '@fluent-blocks/schemas'
-import {
   BrandVariants,
   createDarkTheme,
   createLightTheme,
@@ -22,6 +12,16 @@ import {
   webHighContrastTheme,
   webLightTheme,
 } from '@fluentui/react-components'
+import {
+  PaletteConfig,
+  hexColorsFromPalette,
+  hex_to_LCH,
+} from '@teamsui/colors'
+import {
+  AccentScheme as NaturalAccentScheme,
+  ThemeName as NaturalThemeName,
+  Palette,
+} from '@teamsui/schemas'
 
 export type ThemeName = NaturalThemeName
 export type AccentScheme = NaturalAccentScheme

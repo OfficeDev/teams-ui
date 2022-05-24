@@ -1,7 +1,7 @@
 import { Chart } from 'chart.js'
 import { memo, useContext, useEffect, useRef } from 'react'
 
-import { FluentBlocksContext, useTranslations } from '../../../lib'
+import { TeamsUiContext, useTranslations } from '../../../lib'
 import { Legend } from '../Legend'
 import { lineChartPatterns, useChartColors } from '../chart-patterns'
 import { useChartStyles } from '../chart-styles'
@@ -30,7 +30,7 @@ export const LineChart = memo(
     data: ChartData
     gradients?: boolean
   }) {
-    const { themeName, theme } = useContext(FluentBlocksContext)
+    const { themeName, theme } = useContext(TeamsUiContext)
     const canvasRef = useRef<HTMLCanvasElement | null>(null)
     const chartRef = useRef<Chart | undefined>()
     const chartId = useChartId()

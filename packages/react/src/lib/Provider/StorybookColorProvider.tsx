@@ -1,15 +1,12 @@
-import {
-  cssGradientFromCurve,
-  curvePathFromPalette,
-} from '@fluent-blocks/colors'
-import { Palette } from '@fluent-blocks/schemas'
+import { cssGradientFromCurve, curvePathFromPalette } from '@teamsui/colors'
+import { Palette } from '@teamsui/schemas'
 
 import { Escape, defaultContext } from '..'
 import { Main } from '../../surfaces'
 import fakeTitle from '../fakeTitle'
 import iconSpriteUrl from '../storybookIconSpriteUrl'
 import { defaultPaletteConfig, getFullLCHPalette } from '../theme'
-import { FluentBlocksProvider } from './FluentBlocksProvider'
+import { TeamsUiProvider } from './TeamsUiProvider'
 
 interface StorybookProviderProps
   extends Pick<Palette, 'lightCp' | 'darkCp' | 'hueTorsion'> {
@@ -28,7 +25,7 @@ export const StorybookColorProvider = ({
     getFullLCHPalette({ keyColor, darkCp, lightCp, hueTorsion })
   )
   return (
-    <FluentBlocksProvider
+    <TeamsUiProvider
       {...defaultContext}
       accentScheme={{ keyColor, lightCp, darkCp, hueTorsion }}
       themeName={themeName}
@@ -81,6 +78,6 @@ export const StorybookColorProvider = ({
           </Escape>,
         ]}
       />
-    </FluentBlocksProvider>
+    </TeamsUiProvider>
   )
 }

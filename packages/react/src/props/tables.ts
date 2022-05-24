@@ -5,7 +5,7 @@ import {
   TableColumnProps as NaturalTableColumnProps,
   TableProps as NaturalTableProps,
   TableActionPayload,
-} from '@fluent-blocks/schemas'
+} from '@teamsui/schemas'
 
 import { InlineSequenceOrString } from '../inlines'
 import { ButtonProps } from '../inputs'

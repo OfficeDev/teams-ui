@@ -1,4 +1,4 @@
-# Contributing to Fluent Blocks
+# Contributing to Teams UI Components
 
 Please see the contribution docs specific to each package:
 

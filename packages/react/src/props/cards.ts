@@ -1,4 +1,4 @@
-import { CardProps as NaturalCardProps } from '@fluent-blocks/schemas'
+import { CardProps as NaturalCardProps } from '@teamsui/schemas'
 
 import {
   DescriptionListPropsOrElement,

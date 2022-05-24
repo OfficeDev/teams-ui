@@ -1,10 +1,14 @@
-<img alt="Fluent Blocks logo" src="https://cdn.jsdelivr.net/gh/OfficeDev/fluent-blocks@next/packages/react/.storybook/public/brandImage.svg" width="320" />
+# Teams UI Components: React
 
 ### [Open Storybook ↗︎][storybook]
 
-Fluent Blocks is a React implementation of [Fluent][figma-fluent] & [UI Kit][figma-uikit] designs for app development based on [`@fluentui/react-components`][fluentui-v9]. This project succeeds [`@fluentui/react-teams`][react-teams].
+Teams UI Components is a React implementation of [Fluent][figma-fluent] & [UI Kit][figma-uikit] designs for app development based on [`@fluentui/react-components`][fluentui-v9]. This project succeeds [`@fluentui/react-teams`][react-teams].
 
 This package provides a set of components developers can use to build fully interactive & accessible experiences using whatever React coding convention they prefer, rendering experiences that match Fluent & UI Kit designs.
+
+## ⚠️ The name of this project may change
+
+This project’s name may change. Please watch for a deprecation notice from NPM or news in the readme’s of this repository.
 
 ## ⚠️ In active development
 
@@ -20,14 +24,14 @@ Using TypeScript and an IDE that supports type inspections will make using this 
 
 1. Add `react@17`, `react-dom@17`, and `@fluentui/react-components@latest` if they’re not in your project already
 2. Add `chart.js@^2.9.4` if you want to use charts from this package
-3. Depending on your package manager, you may need to add `@fluent-blocks/basic-icons` to use icons
-4. Finally, install this package, `@fluent-blocks/react`, using your package manager
+3. Depending on your package manager, you may need to add `@teamsui/basic-icons` to use icons
+4. Finally, install this package, `@teamsui/react`, using your package manager
 
-Now anywhere you can use React, you can use Fluent Blocks. If you want to delegate the entire viewport to Fluent Blocks, use the `View` component on its own:
+Now anywhere you can use React, you can use Teams UI Components. If you want to delegate the entire viewport to Teams UI Components, use the `View` component on its own:
 
 ```tsx
-import { View, Escape } from '@fluent-blocks/react';
-import basicIcons from '@fluent-blocks/basic-icons/basic-icons.svg';
+import { View, Escape } from '@teamsui/react';
+import basicIcons from '@teamsui/basic-icons/basic-icons.svg';
 import { render } from 'react-dom'
 
 render(
@@ -59,17 +63,17 @@ render(
 )
 ```
 
-If you want to use Fluent Blocks’ intermediary components, wrap where any will render in a single `FluentBlocksProvider` (there only needs to be one on the page):
+If you want to use Teams UI Components’ intermediary components, wrap where any will render in a single `TeamsUiProvider` (there only needs to be one on the page):
 
 ```tsx
-import { FluentBlocksProvider, Illustration } from '@fluent-blocks/react';
-import basicIcons from '@fluent-blocks/basic-icons/basic-icons.svg';
+import { TeamsUiProvider, Illustration } from '@teamsui/react';
+import basicIcons from '@teamsui/basic-icons/basic-icons.svg';
 import { render } from 'react-dom'
 
 render(
-  <FluentBlocksProvider iconSpriteUrl={basicIcons}>
+  <TeamsUiProvider iconSpriteUrl={basicIcons}>
     <Illustration illustration='hello' label='Hello'/>
-  </FluentBlocksProvider>,
+  </TeamsUiProvider>,
   document.getElementById('root')
 )
 ```
@@ -155,6 +159,6 @@ In your own project, we recommend serving just the sprites you need locally if p
 [fluent-icons]: https://github.com/microsoft/fluentui-system-icons
 [fluentui-v9]: https://www.npmjs.com/package/@fluentui/react-components
 [react-teams]: https://www.npmjs.com/package/@fluentui/react-teams
-[storybook]: https://aka.ms/fluent-blocks-storybook
+[storybook]: https://aka.ms/teams-ui-storybook
 [wcag]: https://www.w3.org/TR/WCAG21
 [fmtctx]: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flow_Layout/Block_and_Inline_Layout_in_Normal_Flow

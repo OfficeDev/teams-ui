@@ -1,12 +1,12 @@
-import { BigMessageProps } from './BigMessage'
+import { ButtonActionPayload } from '../../inputs'
 import {
   AccentScheme,
-  FluentBlocksProvider,
+  TeamsUiProvider,
   ThemeName,
   WithActionHandler,
 } from '../../lib'
 import { Main } from '../../surfaces'
-import { ButtonActionPayload } from '../../inputs'
+import { BigMessageProps } from './BigMessage'
 
 export const BigMessage = ({
   themeName,
@@ -19,14 +19,12 @@ export const BigMessage = ({
   accentScheme: AccentScheme
   iconSpriteUrl: string
 } & WithActionHandler<ButtonActionPayload>) => (
-  <FluentBlocksProvider
-    {...{ themeName, accentScheme, onAction, iconSpriteUrl }}
-  >
+  <TeamsUiProvider {...{ themeName, accentScheme, onAction, iconSpriteUrl }}>
     <Main
       blocks={[
         { message: { ...props, variant: 'big', viewportHeight: false } },
       ]}
       title={[{ text: ' ' }]}
     />
-  </FluentBlocksProvider>
+  </TeamsUiProvider>
 )

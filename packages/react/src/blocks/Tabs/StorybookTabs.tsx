@@ -1,4 +1,4 @@
-import { AccentScheme, FluentBlocksProvider, ThemeName } from '../../lib'
+import { AccentScheme, TeamsUiProvider, ThemeName } from '../../lib'
 import { Main } from '../../surfaces'
 import { TabsProps } from './Tabs'
 
@@ -12,12 +12,12 @@ export const Tabs = ({
   accentScheme: AccentScheme
   iconSpriteUrl: string
 }) => (
-  <FluentBlocksProvider {...{ themeName, accentScheme, iconSpriteUrl }}>
+  <TeamsUiProvider {...{ themeName, accentScheme, iconSpriteUrl }}>
     <Main
       title={[{ text: ' ' }]}
       blocks={[
         { card: { title: '', titleVisuallyHidden: true, body: [props] } },
       ]}
     />
-  </FluentBlocksProvider>
+  </TeamsUiProvider>
 )

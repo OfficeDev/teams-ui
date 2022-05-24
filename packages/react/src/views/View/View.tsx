@@ -1,11 +1,7 @@
-import { AccentScheme, ThemeName } from '@fluent-blocks/schemas'
+import { AccentScheme, ThemeName } from '@teamsui/schemas'
 
 import { SectionContentProps } from '../../blocks'
-import {
-  FluentBlocksProvider,
-  Translations,
-  defaultTranslations,
-} from '../../lib'
+import { TeamsUiProvider, Translations, defaultTranslations } from '../../lib'
 import { WithActionHandler } from '../../props'
 import { Main } from '../../surfaces'
 
@@ -26,7 +22,7 @@ export const View = ({
   iconSpriteUrl,
   onAction,
 }: ViewProps) => (
-  <FluentBlocksProvider
+  <TeamsUiProvider
     {...{
       themeName,
       accentScheme,
@@ -36,5 +32,5 @@ export const View = ({
     }}
   >
     <Main {...main} />
-  </FluentBlocksProvider>
+  </TeamsUiProvider>
 )

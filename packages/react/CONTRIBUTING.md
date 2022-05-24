@@ -1,4 +1,4 @@
-# Contributing to Fluent Blocks: React
+# Contributing to Teams UI Components: React
 
 ## Getting started
 

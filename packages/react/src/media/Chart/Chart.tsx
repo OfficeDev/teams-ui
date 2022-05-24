@@ -2,8 +2,8 @@ import { Chart as ChartJS } from 'chart.js'
 import set from 'lodash/set'
 import { ReactElement } from 'react'
 
-import { ChartProps } from '@fluent-blocks/schemas'
 import { makeStyles } from '@fluentui/react-components'
+import { ChartProps } from '@teamsui/schemas'
 
 import { invalidChart } from '../../lib'
 import { BubbleChart } from './variants/BubbleChart'

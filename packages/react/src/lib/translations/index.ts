@@ -1,6 +1,6 @@
 import { useContext } from 'react'
 
-import { FluentBlocksContext } from '../Provider/FluentBlocksContext'
+import { TeamsUiContext } from '../Provider/TeamsUiContext'
 import enUS from './en-US'
 
 export type Dir = 'ltr' | 'rtl'
@@ -19,6 +19,6 @@ export const getTranslation = (
 ): string => (translations.hasOwnProperty(key) ? translations[key] : key)
 
 export const useTranslations = () => {
-  const translations = useContext(FluentBlocksContext).translations
+  const translations = useContext(TeamsUiContext).translations
   return (key: string): string => getTranslation(translations, key)
 }

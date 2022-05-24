@@ -1,19 +1,19 @@
 import get from 'lodash/get'
 import isString from 'lodash/isString'
+
 import {
-  InlineEntity as NaturalInlineEntity,
   InlineContentProps as NaturalInlineContentProps,
-} from '@fluent-blocks/schemas'
+  InlineEntity as NaturalInlineEntity,
+} from '@teamsui/schemas'
 
 import {
-  invalidInline,
   EscapeElement,
-  renderIfEscape,
   Sequence,
+  invalidInline,
+  renderIfEscape,
 } from '../../lib'
-
-import { TextElement, renderIfText } from '../Text/Text'
 import { IconElement, renderIfIcon } from '../Icon/Icon'
+import { TextElement, renderIfText } from '../Text/Text'
 
 export type InlineEntity =
   | NaturalInlineEntity
